@@ -13,6 +13,7 @@
     width: 1160px;
     justify-content: center;
     margin: 0 auto;
+    
 
 }
 
@@ -72,9 +73,11 @@ section{
 
 main{
     grid-area: content;
+    border-right: solid black;
     background-color: white;
     font-family: Raleway;
     font-style: normal;
+    border-right: black;
 }
 
 /* Mise en forme du block de droite : les titres en Lato, une marge entre la bordure et le titre, couleur backgroud pour le titre */
@@ -99,11 +102,15 @@ main p, dl{
     font-family: Raleway;
 }
 
+.competence{
+    margin-left: 5%;
+}
 
 /* Mise en forme du block de gauche : background , marge à gauche et à droite, les titres en Lato, le reste en Raleway, */
 aside{
     grid-area: sidebar;
-    margin-right: 5%;
+    width: 300px;
+    margin-right: 3%;
     font-family: Raleway;
     font-style: normal;
     color: white;
