@@ -1,0 +1,150 @@
+
+/* Mise en forme généra du CV */
+.container{
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "section section"
+      "sidebar content"
+      "footer footer";
+    grid-template-columns: 1fr 5fr;
+    gap: 0px;
+    background-color: #782221;
+    width: 1160px;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+/* Mise en forme de l'entete */
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Raleway;
+    font-style: normal;
+    text-align: center;
+
+}
+
+header img{
+    border-radius: 50%;
+    margin-top: 5%;
+}
+
+header h1, h3{
+    font-family: Lato;
+    font-style: normal;
+}
+
+header p{
+    text-align:center;
+    font-style:italic ;
+}
+
+a{
+    color: white;
+    text-indent: 1em ;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+/* Mise en forme du block contact */
+section{
+    grid-area: section;
+    background-color: #2c1d27;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    height: 50px;
+    color: white;
+    font-family: Raleway;
+    font-style: normal;
+    padding-bottom: 1% ;
+    font-style: italic;
+
+  }
+
+
+/* Mise en forme du block de droite : backgroud blanc */
+
+main{
+    grid-area: content;
+    background-color: white;
+    font-family: Raleway;
+    font-style: normal;
+}
+
+/* Mise en forme du block de droite : les titres en Lato, une marge entre la bordure et le titre, couleur backgroud pour le titre */
+main h2{
+    border-left: 1rem solid #782221;
+    background-color: #dbc2a4;
+    margin-left: 5%;
+    font-family: Lato;
+    text-indent: 2%;
+}
+
+/* Mise en forme du block de droite : les titres en Lato, une marge à gauche */
+h3{
+    
+    margin-left: 5%;
+    font-family: Lato;
+    font-style: normal;
+}
+
+main p, dl{
+    margin-left: 5%;
+    font-family: Raleway;
+}
+
+
+/* Mise en forme du block de gauche : background , marge à gauche et à droite, les titres en Lato, le reste en Raleway, */
+aside{
+    grid-area: sidebar;
+    margin-right: 5%;
+    font-family: Raleway;
+    font-style: normal;
+    color: white;
+}
+
+aside h2{
+    background-color: #dbc2a4;
+    color: black;
+    margin-right: 5%;
+    text-indent: 5%;
+    font-family: Lato;
+}
+
+aside p{
+    margin-left: 5%;
+    margin-right: 7%;
+    font-family: Raleway;
+    color: white;
+    text-indent: 3em;
+}
+
+/* Mise en forme des listes dans la scetion compétence /
+.competence{
+    margin-left: 5%;
+}
+
+/* Mise en sforme du bas de page : il doit etre flex, une marge en haut et en bas, centré */
+footer{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer a{
+    margin-left: 2%;
+}
+
+footer img{
+    height: 50px;
+    width: 50px;
+}
